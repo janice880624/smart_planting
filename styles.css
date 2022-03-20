@@ -1,9 +1,40 @@
 body{
     margin: 0px;
-    background-image: url("img/1.jpg");
+    background-image: url("img/1.png");
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    opacity: 0.5;
+}
+
+.box{
+    width: 395px;
+    height: 245px;
+    margin: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,1.00);
+    background-color: white;
+}
+
+.img_card{
+    height: 100px;
+}
+
+#content {
+    align-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.a{
+    position: absolute;
+    width: 826px;
+    left: 343px;
+    top: 63px;
+
+    text-align: center;
+    letter-spacing: 0.2em;
+
+    color: #000000;
 }
