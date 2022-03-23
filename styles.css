@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'cwTeXYen';
+    font-style: normal;
+    font-weight: 500;
+    src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
+    src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format('embedded-opentype'),
+            url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format('woff2'),
+            url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'),
+            url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
+}
+
 body{
     margin: 0px;
     background-image: url("img/1.png");
@@ -7,17 +18,24 @@ body{
     background-size: cover;
 }
 
+header{
+    text-align: center;
+    margin: 15px 0;
+}
+
 .box{
     width: 395px;
     height: 245px;
     margin: 20px 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,1.00);
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;  
 }
 
 .img_card{
     height: 100px;
+    margin-top: 27px;
 }
 
 #content {
@@ -27,14 +45,9 @@ body{
     justify-content: center;
 }
 
-.a{
-    position: absolute;
-    width: 826px;
-    left: 343px;
-    top: 63px;
-
-    text-align: center;
-    letter-spacing: 0.2em;
-
-    color: #000000;
+.box_text{
+    font-size: 30px;
+    margin: 15px 0;
+    font-family: 'cwTeXYen', 'Comic Sans MS';
+    font-weight:bold;
 }
