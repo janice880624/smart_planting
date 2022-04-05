@@ -1,16 +1,24 @@
-var config = {
-    apiKey: "AIzaSyChSx34wzEPlSUED3gjM34m07qUlV-QHmo",
-    authDomain: "smart-planting-ddad1.firebaseapp.com",
-    databaseURL: "https://smart-planting-ddad1-default-rtdb.firebaseio.com",
-    projectId: "smart-planting-ddad1",
-    storageBucket: "smart-planting-ddad1.appspot.com",
-    messagingSenderId: "934197283911",
-    appId: "1:934197283911:web:144de621766e26ae56b562"
-};
+var g3;
+var photocell;
+var myData;
+var dht;
+var water;
+var hum;
+var ph;
+var soil;
+var pm10;
+var pm25;
+var tem;
 
-firebase.initializeApp(config);
 
-// db.ref("/dht").once('value', function (snapshot) {
-//     var data = snapshot.val();
-//     console.log(data);
-// });
+myData= {};
+myData.sheetUrl = 'https://docs.google.com/spreadsheets/d/1i8nsUwJ9aJJ9tbJifoww9mlNA1bM_VN2LPeWA-kmyJk/edit?usp=sharing';
+myData.sheetName = '工作表1';
+readSheetData({
+  row : 1,
+  col : 4,
+  sheetUrl : myData.sheetUrl,
+  sheetName : myData.sheetName
+}, function(googleSheetReadData){
+  document.getElementById('demo-area-01-show').innerHTML = googleSheetReadData;
+});

@@ -18,10 +18,13 @@ body{
     background-size: cover;
 }
 
+
 header{
     text-align: center;
     margin: 15px 0;
 }
+
+#demo-area-01-show { font-size: 60px; pointer-events: auto!important; }
 
 .box{
     width: 395px;
