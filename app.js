@@ -1,7 +1,8 @@
+var corsURL = 'https://cors-anywhere.herokuapp.com/';
 var dataUrl= "https://script.google.com/macros/s/AKfycbwNTGOIVs5liP2LhudEk3MQZ87aS9VROHWHwko__fkvqZgsmrQ29slfKbAPedawyNeBgg/exec"
 let tempdata = "";
 $.ajax({
-    url: dataUrl,
+    url: corsURL + dataUrl,
     method: 'GET',
     dataType: 'json',
     data: '',
