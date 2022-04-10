@@ -7,15 +7,17 @@
     <title> 未來農場資訊 </title>
     <link rel="stylesheet" href="styles.css" />
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script src="https://blocklypro.webduino.io/node_modules/jquery/dist/jquery.min.js?rev=2f6b11a7e914718e0290410e85366fe9"></script>
-  <script src="https://blocklypro.webduino.io/dist/lib/webduino-all-0.4.20.min.js?rev=4426739c00d85325cb2d3d701fa50666"></script>
-  <script src="https://blocklypro.webduino.io/dist/webduino-blockly.min.js?rev=6e074ceb23d12d1f7cf2ec95cd5a4150"></script>
-  <script src="https://blocklypro.webduino.io/dist/lib/firebase.min.js?rev=c0bfd493efd477d098a4ae9e92b13880"></script>
-  <script src="https://blocklypro.webduino.io/dist/lib/runtime.min.js?rev=683a69503433786202911b4d9f766100"></script>
-  <script src="https://blocklypro.webduino.io/node_modules/webduino-module-pm25/G3.js"></script>
-  <script src="https://blocklypro.webduino.io/node_modules/webduino-module-pm25/G3-blockly.js"></script>
-  <script src="https://blocklypro.webduino.io/node_modules/webduino-module-dht/Dht.js"></script>
-  <script src="https://blocklypro.webduino.io/node_modules/webduino-module-dht/Dht-blockly.js"></script>
+    <script src="https://blocklypro.webduino.io/dist/lib/webduino-all-0.4.20.min.js?rev=4426739c00d85325cb2d3d701fa50666"></script>
+    <script src="https://blocklypro.webduino.io/dist/webduino-blockly.min.js?rev=6e074ceb23d12d1f7cf2ec95cd5a4150"></script>
+    <script src="https://blocklypro.webduino.io/dist/lib/firebase.min.js?rev=c0bfd493efd477d098a4ae9e92b13880"></script>
+    <script src="https://blocklypro.webduino.io/dist/lib/runtime.min.js?rev=683a69503433786202911b4d9f766100"></script>
+    <script src="https://blocklypro.webduino.io/node_modules/webduino-module-pm25/G3.js"></script>
+    <script src="https://blocklypro.webduino.io/node_modules/webduino-module-pm25/G3-blockly.js"></script>
+    <script src="https://blocklypro.webduino.io/node_modules/webduino-module-dht/Dht.js"></script>
+    <script src="https://blocklypro.webduino.io/node_modules/webduino-module-dht/Dht-blockly.js"></script>
     
   </head>
 
@@ -28,32 +30,37 @@
       <div class="box">
         <img src="img/thermometer.png" alt="溫度" class="img_card">
         <p class="box_text"> 溫度 </p>
-        <span id="demo-area-01-show">123</span>
+        <div class="temperature text-show"></div>
       </div>
   
       <div class="box">
         <img src="img/humidity.png" alt="溫度" class="img_card">
         <p class="box_text"> 濕度 </p>
+        <div class="humidity text-show"></div>
       </div>
   
       <div class="box">
         <img src="img/leaf.png" alt="溫度" class="img_card">
         <p class="box_text"> 土壤濕度 </p>
+        <div class="soilhumidity text-show"></div>
       </div>
   
       <div class="box">
         <img src="img/dust.png" alt="溫度" class="img_card">
         <p class="box_text"> PM 10 </p>
+        <div class="pm10 text-show"></div>
       </div>
   
       <div class="box">
         <img src="img/air-pollution.png" alt="溫度" class="img_card">
         <p class="box_text"> PM 2.5 </p>
+        <div class="pm25 text-show"></div>
       </div>
   
       <div class="box">
         <img src="img/waterdrop.png" alt="溫度" class="img_card">
         <p class="box_text"> 水質 </p>
+        <div class="waterquality text-show"></div>
       </div>
     </div>
 

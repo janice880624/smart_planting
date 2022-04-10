@@ -24,7 +24,12 @@ header{
     margin: 15px 0;
 }
 
-#demo-area-01-show { font-size: 60px; pointer-events: auto!important; }
+.text-show { 
+    font-size: 25px; 
+    pointer-events: 
+    auto!important; 
+    font-family: 'cwTeXYen', 'Comic Sans MS';
+}
 
 .box{
     width: 395px;
